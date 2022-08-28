@@ -28,3 +28,11 @@ https://github.com/tailwindlabs/prettier-plugin-tailwindcss
 fixed top-0 left-0 right-0
 ```
 
+
+
+### 响应式
+
+```
+hiden sm:flex
+```
+

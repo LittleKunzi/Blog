@@ -1,5 +1,7 @@
 ## docker-compose.yml文件配置
 
+`-`和值之间应该有一个空格，并且值应该是一个字符串。
+
 ```yml
 version: '3'
 
@@ -8,7 +10,7 @@ services:
     image: postgres
     restart: always
     ports:
-      -"54322:54322"
+      - "54322:54322"
     environment:
       POSTGRES_PASSWORD: 123456
 ```

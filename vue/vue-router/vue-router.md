@@ -424,3 +424,27 @@ router.beforeEach((to, from, next) => {
 
 
 #### 组件内的守卫
+
+
+
+### router-link的active(选中改变样式)
+
+**在vue-router中要使用选中样式的方法有两种：**
+
+**1、直接在路由js文件中配置linkActiveClass**
+
+ ```ts
+ const router = createRouter({
+   linkActiveClass: "routerLinkActive",//routerLinkActive为index.css中写的class
+   //...
+ });
+ ```
+
+
+
+**2、在router-link中写入active-class**
+
+```html
+<RouterLink active-class="bg-primary">
+```
+

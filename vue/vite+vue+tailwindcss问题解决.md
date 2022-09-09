@@ -58,9 +58,9 @@ index.css
 在工作区setting中忽略unknownAtRules
 
 ```
-{
-    "scss.lint.unknownAtRules": "ignore",
+  "settings": {
+		"scss.lint.unknownAtRules": "ignore",
     "css.lint.unknownAtRules": "ignore"
-}
+	}
 ```
 

@@ -51,7 +51,7 @@ index.css
 
 ### vite动态导入图片
 
-
+https://cn.vitejs.dev/guide/assets.html#new-url-url-import-meta-url
 
 ### 在vue文件中使用@apply爆黄
 

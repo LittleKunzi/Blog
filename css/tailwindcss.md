@@ -36,3 +36,10 @@ fixed top-0 left-0 right-0
 hiden sm:flex
 ```
 
+
+
+### 间距
+
+用于控制子元素之间空间的实用程序。
+
+`space`

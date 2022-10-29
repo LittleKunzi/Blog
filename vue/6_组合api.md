@@ -22,4 +22,35 @@
 
 ### defineProps
 
-在选项api中我们使用props属性来传递prop，在组合api中我们使用
+在选项api中我们使用props属性来传递prop，在组合api中我们使用`defineProps`函数（记得是通过标签中的属性传值）
+
+```vue
+<!-- 父 -->
+<script setup lang="ts">
+</script>
+<template>
+	<ItemCard :title="title" :price="price" class="bg-base-100 px-4 pt-4" />
+</template>
+
+<!-- 子：ItemCard.vue -->
+<script setup lang="ts">
+const props = defineProps({
+    title:String,
+    price:Number
+});
+</script>
+<template>
+	<h1
+    class="mb-3 w-full flex-none text-2xl leading-none text-slate-900"
+      >
+    {{ props.title }}
+  </h1>
+  <div
+    name="price"
+    class="flex-auto text-lg font-medium text-slate-500"
+  >
+    ￥{{ props.price }}
+  </div>
+</template>
+```
+
